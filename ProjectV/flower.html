@@ -316,9 +316,22 @@
 
   <!-- Title -->
   <h1 class="title"><span id="title"></span></h1>
+
+  <!-- MUSIC -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PLAY MUSIC WHEN USER TAPS -->
+  <script>
+    document.addEventListener("click", function () {
+      const music = document.getElementById("bg-music");
+      music.play();
+    }, { once: true });
+  </script>
+
+  <!-- Import Javascript -->
+  <script src="js/main.js"></script>
+
 </body>
-
 </html>
-
-<!-- Import Javascript -->
-<script src="js/main.js"></script>
