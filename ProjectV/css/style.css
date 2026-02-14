@@ -1218,12 +1218,12 @@ body {
 /* Example: scale down flowers on small screens */
 @media only screen and (max-width: 768px) {
   .flowers {
-    transform: scale(2); /* shrink everything a bit */
+    transform: scale(1); /* shrink everything a bit */
     transform-origin: center; /* keep flowers grounded */
   }
 
   .title {
-    font-size: 1.5rem; /* smaller title */
+    font-size: 2rem; /* smaller title */
     text-align: center;
     margin-top: 20px;
   }
