@@ -109,3 +109,21 @@ a {
   fill: white;
   transform: scale(1.2);
 }
+
+/* Example: scale down flowers on small screens */
+@media only screen and (max-width: 768px) {
+  .flowers {
+    transform: scale(0.6); /* shrink everything a bit */
+    transform-origin: bottom center; /* keep flowers grounded */
+  }
+
+  .title {
+    font-size: 1.5rem; /* smaller title */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .night {
+    background-size: cover; /* make sure night background scales */
+  }
+}
